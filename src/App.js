@@ -12,7 +12,7 @@ import Background from './Background';
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" style={{height: '100%'}}>
       <Background/>
       <NavBar/>
       <Switch>

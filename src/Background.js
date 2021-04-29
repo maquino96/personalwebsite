@@ -27,7 +27,7 @@ const Background = () => {
         },
         "fullScreen": {
           "enable": true,
-          "zIndex": -10
+          "zIndex": -1
         },
         "detectRetina": true,
         "fpsLimit": 90,
@@ -52,7 +52,7 @@ const Background = () => {
               "type": "circle"
             },
             "onHover": {
-              "enable": false,
+              "enable": true,
               "mode": "repulse",
               "parallax": {
                 "enable": false,
@@ -118,7 +118,7 @@ const Background = () => {
               "quantity": 2
             },
             "repulse": {
-              "distance": 200,
+              "distance": 100,
               "duration": 0.4,
               "speed": 1
             },
