@@ -1,13 +1,12 @@
 import React from 'react'
 import { Container } from 'semantic-ui-react'
 
-const ProjectsContainer = () => {
+const AboutContainer = () => {
     return (
-        <Container>
-            Projects
-
+        <Container> 
+            Matthew Aquino
         </Container>
     )
 }
 
-export default ProjectsContainer
+export default AboutContainer

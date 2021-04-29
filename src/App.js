@@ -1,14 +1,20 @@
 import React from 'react'
 import './App.css';
 import { Switch, Route } from "react-router-dom";
-import About from './Home/About';
+import About from './About/About';
 import ProjectsRoute from './Projects/ProjectsRoute';
 import BlogsRoute from './Blogs/BlogsRoute';
+// import {Header} from 'semantic-ui-react'
+import NavBar from './About/NavBar';
+import Background from './Background';
 
 
 function App() {
+
   return (
     <div className="App">
+      <Background/>
+      <NavBar/>
       <Switch>
         <Route exact path='/'>
           <About/>
