@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Header, Button, Icon } from "semantic-ui-react";
+import {useHistory} from 'react-router-dom'
 
 const AboutContainer = () => {
-
-
+    const history = useHistory()
     const buttonClick = (e) => {
         e.preventDefault()
         // console.log(e.target.value)
@@ -25,10 +25,9 @@ const AboutContainer = () => {
         height: "27em",
         borderRadius: "15px",
         opacity: ".95",
-        overflowY: 'hidden'
+        // overflowY: 'scroll'
       }}
     >
-
       <Header as="h2" style={{paddingTop:'1em'}}>
         <Header.Content>
           Matthew Aquino
@@ -41,7 +40,7 @@ const AboutContainer = () => {
 
       </Container>
 
-      <Header as='h3'>
+      <Header as='h3' style={{marginTop: '.5em'}}>
           Connect with me on:
       </Header>
       <Container style={{}}>
@@ -49,7 +48,7 @@ const AboutContainer = () => {
           <Button color='black' onClick={(e)=>buttonClick(e)} value='linkedin' style={{marginLeft: '10px', marginTop: '10px'}}><Icon name='linkedin'/>Linkedin</Button>
           <Button color='black' onClick={(e)=>buttonClick(e)} value='medium' style={{marginLeft: '10px', marginTop: '10px'}}><Icon name='medium'/>Medium</Button>
       </Container>
-      <Button style={{marginTop: '3em'}}>Background</Button>
+      <Button basic color='black' onClick={()=>{history.push('/')}} style={{marginTop: '.75em'}}>Back</Button>
     </Container>
     
   );

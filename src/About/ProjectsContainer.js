@@ -20,7 +20,7 @@ const ProjectsContainer = () => {
         <Card>
           <Image src={images.stoxMain} />
           <Card.Content>
-            <Card.Header>Stoxx</Card.Header>
+            <Card.Header>StoX</Card.Header>
             <Card.Meta>
               <span className="date">April 2021</span>
             </Card.Meta>
