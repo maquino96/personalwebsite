@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import './App.css';
 import { Switch, Route } from "react-router-dom";
 import About from './About/About';
@@ -8,21 +8,37 @@ import BlogsRoute from './Blogs/BlogsRoute';
 import NavBar from './About/NavBar';
 import Background from './Background';
 import Landing from './Landing';
+import { useLocation } from 'react-router-dom'
 
 
 function App() {
-
+  const location = useLocation()
+  // console.log(location)
   const [entered, setEntered] = useState(false)
+
+  useEffect(()=>{
+
+    if (location.pathname === '/'){
+      setEntered(false)
+    } else {
+      setEntered(true)
+    }
+
+
+
+  },[location.pathname])
 
   return (
     <div className="App" style={{height: '100%'}}>
       <Background
             entered={entered}
-            setEntered={setEntered}
           />
       <Switch>
         <Route exact path='/'>
-          <Landing/> 
+          <Landing
+            entered={entered}
+            setEntered={setEntered}
+          /> 
         </Route>
         <Route exact path='/home'>
           <NavBar/>

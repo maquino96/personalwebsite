@@ -3,10 +3,10 @@ import {Header, Menu} from 'semantic-ui-react'
 
 const NavBar = () => {
     return (
-        <Header textAlign='center' style={{padding: '1em', marginLeft: '5%', width: '90%', backgroundColor: 'white', opacity: '.95', borderRadius: '15px' }}>
-            {/* mattaquino.dev */}
-        <Menu pointing secondary position='right'>
-        {/* <Menu.Menu position='right'>
+
+        <Menu inverted pointing secondary position='right'>
+        <Header inverted style={{marginLeft: '15%', marginBottom: '0', width: '90%', opacity: '.95', borderRadius: '15px', fontSize:'24px' }}>mattaquino.dev</Header>
+        {/* <Menu.Menu position='right' style={{marginRight: '3vw'}}>
         <Menu.Item
           name='home'
         />
@@ -17,9 +17,8 @@ const NavBar = () => {
           name='blogs'
         />
         </Menu.Menu> */}
-
       </Menu>
-      </Header>
+
     )
 }
 
