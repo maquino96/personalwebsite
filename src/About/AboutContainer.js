@@ -51,7 +51,7 @@ const AboutContainer = () => {
           <Button color='black' onClick={(e)=>buttonClick(e)} value='medium' style={{marginLeft: '10px', marginTop: '10px'}}><Icon name='medium'/>Medium</Button>
           <Button color='black' onClick={(e)=>buttonClick(e)} value='resume' style={{marginLeft: '10px', marginTop: '10px'}}><Icon name='file'/>Resume</Button>
       </Container>
-      <Button basic color='black' onClick={()=>{history.push('/')}} style={{marginTop: '.75em'}}>Back</Button>
+      <Button basic  color='black' onClick={()=>{history.push('/')}} style={{marginTop: '.75em'}}>Back</Button>
     </Container>
     
   );

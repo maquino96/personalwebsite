@@ -17,7 +17,7 @@ const ProjectsContainer = () => {
     >
       <Header as='h1' style={{paddingTop: '2vh'}}>Projects</Header>
       <Card.Group itemsPerRow={3} style={{ padding: "0 2vw" }}>
-        <Card>
+        <Card onClick={()=>{window.open('stoxx.netlify.app', "_blank")}}>
           <Image src={images.stoxMain} />
           <Card.Content>
             <Card.Header>StoX</Card.Header>
@@ -30,7 +30,7 @@ const ProjectsContainer = () => {
           </Card.Content>
         </Card>
 
-        <Card>
+        <Card onClick={()=>{window.open('apartmenthunter.netlify.app', "_blank")}}>
         <Image src={images.apartmenthunterMain} />
           <Card.Content>
             <Card.Header>Apartment//Hunter</Card.Header>
@@ -43,7 +43,7 @@ const ProjectsContainer = () => {
           </Card.Content>
         </Card>
 
-        <Card >
+        <Card onClick={()=>{window.open('https://github.com/maquino96/pomodorapp-frontend', "_blank")}}>
         <Image src={images.pomodorappMain} />
           <Card.Content >
             <Card.Header>PomodorApp</Card.Header>
