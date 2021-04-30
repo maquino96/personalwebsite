@@ -1,19 +1,19 @@
 import React from 'react'
 import Particles from 'react-tsparticles'
 
-const Background = () => {
+const Background = ({entered}) => {
 
     const options = {
         "autoPlay": true,
         "background": {
           "color": {
-            "value": "#031f4cdf"
+            "value": ""
           },
-          "image": "",
+          "image": "radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%)",
           "position": "50% 50%",
           "repeat": "no-repeat",
           "size": "cover",
-          "opacity": 1
+          "opacity": 1,
         },
         "backgroundMask": {
           "composite": "destination-out",
@@ -27,7 +27,7 @@ const Background = () => {
         },
         "fullScreen": {
           "enable": true,
-          "zIndex": -1
+          "zIndex": entered ? -1 : 1
         },
         "detectRetina": true,
         "fpsLimit": 90,

@@ -6,7 +6,7 @@ const NavBar = () => {
         <Header textAlign='center' style={{padding: '1em', marginLeft: '5%', width: '90%', backgroundColor: 'white', opacity: '.95', borderRadius: '15px' }}>
             {/* mattaquino.dev */}
         <Menu pointing secondary position='right'>
-        <Menu.Menu position='right'>
+        {/* <Menu.Menu position='right'>
         <Menu.Item
           name='home'
         />
@@ -16,7 +16,7 @@ const NavBar = () => {
         <Menu.Item
           name='blogs'
         />
-        </Menu.Menu>
+        </Menu.Menu> */}
 
       </Menu>
       </Header>

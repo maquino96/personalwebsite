@@ -3,7 +3,7 @@ import { Container, Grid, Image } from "semantic-ui-react";
 import AboutContainer from "./AboutContainer";
 import BlogsContainer from "./BlogsContainer";
 import ProjectsContainer from "./ProjectsContainer";
-import Headshot_profile from "../Headshot_profile.png";
+import Headshot_profile from "../Images/Headshot_profile.png";
 
 
 const About = () => {

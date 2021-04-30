@@ -25,6 +25,7 @@ const AboutContainer = () => {
         height: "27em",
         borderRadius: "15px",
         opacity: ".95",
+        overflowY: 'hidden'
       }}
     >
 

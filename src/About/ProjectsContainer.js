@@ -1,13 +1,77 @@
-import React from 'react'
-import { Container } from 'semantic-ui-react'
+import React from "react";
+import { Container, Card, Image, Header } from "semantic-ui-react";
+import images from "../Images";
 
 const ProjectsContainer = () => {
-    return (
-        <Container style={{backgroundColor: 'white', height: '27em', borderRadius: '15px', opacity: '0.95', marginBottom: '3em'}}>
-            Projects
 
-        </Container>
-    )
-}
+  return (
+    <Container
+      style={{
+        backgroundColor: "white",
+        height: "27em",
+        borderRadius: "15px",
+        opacity: "0.95",
+        marginBottom: "3em",
+        overflowX: 'hidden'
+      }}
+    >
+      <Header as='h1' style={{paddingTop: '2vh'}}>Projects</Header>
+      <Card.Group itemsPerRow={3} style={{ padding: "0 2vw" }}>
+        <Card>
+          <Image src={images.stoxMain} />
+          <Card.Content>
+            <Card.Header>Stoxx</Card.Header>
+            <Card.Meta>
+              <span className="date">April 2021</span>
+            </Card.Meta>
+            <Card.Description>
+              Matthew is a musician living in Nashville.
+            </Card.Description>
+          </Card.Content>
+        </Card>
 
-export default ProjectsContainer
+        <Card>
+        <Image src={images.apartmenthunterMain} />
+          <Card.Content>
+            <Card.Header>Apartment//Hunter</Card.Header>
+            <Card.Meta>
+              <span className="date">March 2021</span>
+            </Card.Meta>
+            <Card.Description>
+              Matthew is a musician living in Nashville.
+            </Card.Description>
+          </Card.Content>
+        </Card>
+
+        <Card >
+        <Image src={images.pomodorappMain} />
+          <Card.Content >
+            <Card.Header>PomodorApp</Card.Header>
+            <Card.Meta>
+              <span className="date">February 2021</span>
+            </Card.Meta>
+            <Card.Description >
+              Work and break timer based off the pomodoro method.
+            </Card.Description>
+          </Card.Content>
+        </Card>
+
+        {/* <Card>
+        <Image src={images.pomodorappMain} />
+          <Card.Content>
+            <Card.Header>PomodorApp</Card.Header>
+            <Card.Meta>
+              <span className="date">February 2021</span>
+            </Card.Meta>
+            <Card.Description>
+              Matthew is a musician living in Nashville.
+            </Card.Description>
+          </Card.Content>
+        </Card> */}
+        
+      </Card.Group>
+    </Container>
+  );
+};
+
+export default ProjectsContainer;
