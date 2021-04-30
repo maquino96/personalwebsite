@@ -12,8 +12,10 @@ const AboutContainer = () => {
 
         } else if (e.target.value === 'linkedin') {
             window.open('https://www.linkedin.com/in/matthew-aquino-27211899/', "_blank")
-        } else {
+        } else if( e.target.value === 'medium') {
             window.open('https://matthewaquino.medium.com/', "_blank")
+        } else {
+          window.open('https://drive.google.com/file/d/1YMYKqd9O5IA1EI1EXfXjoQeUk3Nz_xN2/view?usp=sharing', "_blank")
         }
     }
 
@@ -40,13 +42,14 @@ const AboutContainer = () => {
 
       </Container>
 
-      <Header as='h3' style={{marginTop: '.5em'}}>
+      <Header as='h3' style={{marginTop: '.5em', marginBottom: '.5em'}}>
           Connect with me on:
       </Header>
       <Container style={{}}>
           <Button color='black' onClick={(e)=>buttonClick(e)} value='github' style={{marginLeft: '10px', marginTop: '10px'}}><Icon name='github square'/>Github</Button>
           <Button color='black' onClick={(e)=>buttonClick(e)} value='linkedin' style={{marginLeft: '10px', marginTop: '10px'}}><Icon name='linkedin'/>Linkedin</Button>
           <Button color='black' onClick={(e)=>buttonClick(e)} value='medium' style={{marginLeft: '10px', marginTop: '10px'}}><Icon name='medium'/>Medium</Button>
+          <Button color='black' onClick={(e)=>buttonClick(e)} value='resume' style={{marginLeft: '10px', marginTop: '10px'}}><Icon name='file'/>Resume</Button>
       </Container>
       <Button basic color='black' onClick={()=>{history.push('/')}} style={{marginTop: '.75em'}}>Back</Button>
     </Container>

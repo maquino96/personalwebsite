@@ -25,7 +25,7 @@ const ProjectsContainer = () => {
               <span className="date">April 2021</span>
             </Card.Meta>
             <Card.Description>
-              Matthew is a musician living in Nashville.
+              Quote stocks and add them to your watchlist. 
             </Card.Description>
           </Card.Content>
         </Card>
@@ -38,7 +38,7 @@ const ProjectsContainer = () => {
               <span className="date">March 2021</span>
             </Card.Meta>
             <Card.Description>
-              Matthew is a musician living in Nashville.
+              Enter a zipcode to find and filter listings in that area.
             </Card.Description>
           </Card.Content>
         </Card>
