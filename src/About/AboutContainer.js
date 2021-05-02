@@ -30,7 +30,7 @@ const AboutContainer = () => {
         // overflowY: 'scroll'
       }}
     >
-      <Header as="h2" style={{paddingTop:'1em'}}>
+      <Header as="h2" style={{paddingTop:'.5em'}}>
         <Header.Content>
           Matthew Aquino
           <Header.Subheader>Software Engineer</Header.Subheader>
